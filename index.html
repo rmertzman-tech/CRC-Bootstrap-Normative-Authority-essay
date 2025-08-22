@@ -7,9 +7,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <style>
         body {
+            font-family: 'Lora', serif;
+        }
+        h1, h2, h3, h4, strong {
             font-family: 'Inter', sans-serif;
         }
         h1, h2, h3, h4 {
@@ -28,11 +31,14 @@
             margin-top: 2rem;
             margin-bottom: 2rem;
         }
+        section {
+            margin-bottom: 2.5rem;
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 leading-relaxed">
+<body class="bg-gray-100 text-gray-800 leading-relaxed">
 
-    <main class="max-w-4xl mx-auto bg-white p-8 sm:p-12 my-8 sm:my-12 rounded-lg shadow-md">
+    <main class="max-w-4xl mx-auto bg-white p-8 sm:p-12 my-8 sm:my-12 rounded-lg shadow-xl">
         
         <header class="mb-8 text-center">
             <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Capability-Based Coordination and the Bootstrap Resolution of Normative Authority</h1>
@@ -41,7 +47,7 @@
             <p class="text-md text-gray-600"><strong>Target Journal:</strong> Synthese</p>
         </header>
 
-        <section class="mb-8">
+        <section>
             <h3 class="text-xl font-bold mb-2">Abstract</h3>
             <p class="text-gray-700">How can agents with fundamentally different belief systems, values, and cognitive architectures coordinate normatively without imposing uniformity? This paper proposes a capability-based approach to normative coordination that grounds ethical requirements in the practical constraints of temporal agency rather than shared moral content. Drawing on modal logic and convergent evidence across psychedelic therapy, neuroscience, and cross-cultural coordination, I argue that normative authority emerges through what I call the "bootstrap resolution"—the performative necessity that any agent capable of asking normative questions already demonstrates commitment to the temporal coherence requirements that ground ethical coordination.</p>
             <p class="mt-4 text-gray-700">The resulting framework enables coordination across diverse Personal Reality Frameworks through three universal principles: capability-based propositions, temporal coherence functions, and cross-scale markup organization. This approach dissolves classical metaethical dilemmas by showing how objective normative coordination can emerge from subjective agent architectures through practical necessity rather than metaphysical derivation. The framework's mathematical formalization through Adaptive Temporal Coherence Functions (ATCF) provides empirical criteria for normative validity while maintaining agnosticism about contested metaphysical questions.</p>
@@ -87,8 +93,6 @@
             <p>Section II develops the conceptual foundations, focusing on Personal Reality Frameworks and the mathematical formalization of temporal coherence. Section III presents the bootstrap resolution argument and demonstrates its compatibility with deterministic frameworks. Section IV addresses core philosophical objections systematically. Section V examines convergent empirical evidence from neuroscience, psychology, and cross-cultural coordination research. Section VI explores applications to AI ethics, institutional design, and therapeutic intervention. Section VII concludes with implications for future research in normative theory.</p>
         </section>
         
-        <!-- Repeat this structure for all sections -->
-        
         <hr>
         
         <section>
@@ -105,7 +109,7 @@
                 <li><strong>Authenticity criteria (A+):</strong> Standards for evaluating alignment with core identity, including values, aspirations, and integrity requirements. These determine what kinds of choices and changes preserve versus threaten the agent's sense of authentic selfhood.</li>
             </ul>
             <p class="mb-4"><strong>Mathematical Representation:</strong></p>
-            <p class="mb-4 font-mono bg-gray-100 p-4 rounded-md">PRF(A,t) = ⟨BROA+(t), C(t), ATCF(t), XSC(t), FOP(t)⟩</p>
+            <p class="mb-4 font-mono bg-gray-100 p-4 rounded-md text-sm">PRF(A,t) = ⟨BROA+(t), C(t), ATCF(t), XSC(t), FOP(t)⟩</p>
             <p class="mb-4">Where:</p>
             <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
                 <li><strong>BROA+(t)</strong> = current belief, rule, ontological, and authenticity configuration</li>
@@ -119,7 +123,7 @@
             <h3 class="text-xl font-bold mt-6 mb-3">2.2 Temporal Coherence and the ATCF</h3>
             <p class="mb-4">The crucial insight is that normative requirements emerge from the coherence requirements for maintaining agency over time. An agent maintaining coherent agency over time must integrate past experience, present awareness, and future intention in ways that preserve identity while enabling adaptation.</p>
             <p class="mb-4"><strong>Definition 2.2:</strong> The <em>Adaptive Temporal Coherence Function (ATCF)</em> measures an agent's capacity to maintain identity integration across temporal scales:</p>
-            <p class="mb-4 font-mono bg-gray-100 p-4 rounded-md">ATCF(A, t₁, t₂) = f( HistoricalContinuity(t₀ → t₁), PresentIntegration(t₁), ProspectiveCoherence(t₁ → t₂), MetaConstructorCapacity(t₁) )</p>
+            <p class="mb-4 font-mono bg-gray-100 p-4 rounded-md text-sm">ATCF(A, t₁, t₂) = f( HistoricalContinuity(t₀ → t₁), PresentIntegration(t₁), ProspectiveCoherence(t₁ → t₂), MetaConstructorCapacity(t₁) )</p>
             <p class="mb-4">Where each component measures specific aspects of temporal agency:</p>
             <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
                 <li><strong>Historical Continuity:</strong> The agent's capacity to maintain narrative connections between past and present, preserving identity kernel structures that enable recognition and trust while integrating learning and growth.</li>
@@ -131,21 +135,141 @@
             <p class="mb-4">Complete mathematical foundations, empirical validation protocols, implementation algorithms, case studies with statistical analyses, and detailed falsification criteria are available in the online technical supplement at: <a href="https://rmertzman-tech.github.io/CapBasedCoordinationRepository/" class="text-blue-600 hover:underline" target="_blank">https://rmertzman-tech.github.io/CapBasedCoordinationRepository/</a></p>
             <p>The supplement includes formal proofs, validation methodologies, software implementations, and comprehensive research protocols for readers requiring technical precision.</p>
             
-            <!-- ... The rest of the content would be converted similarly ... -->
-            
+            <h3 class="text-xl font-bold mt-6 mb-3">2.3 Capability-Based Propositions and Functional Equivalence</h3>
+            <p class="mb-4">Traditional approaches to normative coordination assume agents must share semantic content—identical beliefs, values, or cognitive architectures. The capability-based approach suggests coordination can be achieved through <em>capability equivalence</em>: different internal architectures that generate equivalent coordination capabilities.</p>
+            <p class="mb-4"><strong>Definition 2.1:</strong> A <em>capability-based proposition</em> specifies minimal abilities agents must possess to coordinate effectively, rather than requiring shared content. For example, instead of requiring agents to share beliefs about "justice," a capability-based approach specifies abilities like:</p>
+            <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
+                <li>Recognizing when actions systematically benefit some at the expense of others</li>
+                <li>Adjusting behavior when such patterns are identified</li>
+                <li>Maintaining consistent responses to similar situations over time</li>
+                <li>Preserving these capacities under stress or conflict</li>
+            </ul>
+            <p class="mb-4"><strong>Modal Logic Foundation:</strong> Building on work in Alternating-Time Temporal Logic (Alur et al., 2002), coalition logic (Pauly, 2002), and STIT logic (Belnap et al., 2001), capability-based propositions provide formal tools for reasoning about agent abilities rather than shared content. This enables <em>capability equivalence</em> across diverse cognitive architectures: agents with different internal organizations can coordinate if they possess equivalent capabilities for achieving shared coordination goals.</p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">2.4 Cross-Scale Correspondence Principles</h3>
+            <p class="mb-4">The framework identifies three universal principles operating across biological, phenomenological, and technological domains:</p>
+            <ol class="list-decimal list-inside mb-4 pl-4 space-y-2">
+                <li><strong>Capability-Based Propositions:</strong> Enable coordination by specifying abilities rather than content, allowing functional coordination across diverse cognitive architectures.</li>
+                <li><strong>Temporal Coherence Functions:</strong> Provide mathematical measures ensuring organizational frameworks maintain agent identity while enabling adaptive coordination across contexts and timescales.</li>
+                <li><strong>Cross-Scale Markup Organization:</strong> Create hierarchical information architecture principles enabling coordination across implementation substrates, analogous to how HTML markup enables reliable coordination across technological platforms.</li>
+            </ol>
+            <p>These principles operate through <em>scale-adaptive implementation</em> rather than identical replication, enabling coordination across scales from neural networks to international institutions through emergent constraint propagation.</p>
         </section>
-        
+
+        <hr>
+
+        <section>
+            <h2 class="text-2xl font-bold mt-8 mb-4">III. The Bootstrap Resolution of Normative Authority</h2>
+            
+            <h3 class="text-xl font-bold mt-6 mb-3">3.1 Beyond Traditional Metaethical Debates Through Practical Necessity</h3>
+            <p class="mb-4">Contemporary metaethics faces a persistent dilemma: either normative requirements track mind-independent moral facts (risking the "queerness" problem of how agents could access such facts), or they emerge from agent attitudes (risking relativism that undermines coordination). Recent constructivist approaches (Korsgaard, 2009; Street, 2010; Enoch, 2017) ground normativity in reflective endorsement or rational agency but struggle to explain why different agents' reflective processes should converge.</p>
+            <p class="mb-4">The capability-based approach suggests a third path: normative requirements <em>bootstrap</em> from the performative necessities of temporal agency itself. This avoids both metaphysical moral facts and arbitrary relativism by grounding objectivity in the structural requirements of sustained agency.</p>
+            <h4 class="text-lg font-bold mt-4 mb-2">Addressing the Conditional Normativity Concern</h4>
+            <p>Critics might argue this establishes only hypothetical normativity—"if you want to remain an agent, then follow coherence requirements." However, this misses the performative necessity: any being capable of asking "why value agency?" already demonstrates their commitment to continued normative capacity. The question itself presupposes the very agency it purports to question, making the normativity inescapable rather than merely instrumental. This differs fundamentally from survival-based rules because it concerns the logical preconditions for normative discourse itself.</p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">3.2 The Performative Necessity Argument</h3>
+            <p class="mb-4"><strong>The Core Argument:</strong> Any agent capable of asking "why should I follow normative requirements?" already demonstrates their commitment to the temporal coherence requirements that ground ethical coordination. This argument proceeds through four interlocking steps that show how normativity bootstraps from the structural necessities of agency itself.</p>
+            <h4 class="text-lg font-bold mt-4 mb-2">Step 1: The Inescapability of Goal Generation</h4>
+            <p class="mb-4">Agents are not neutral observers contemplating abstract possibilities, but structurally committed goal-generating systems. The question "why should I be ethical?" already presupposes several constitutive features of agency:</p>
+            <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
+                <li><strong>Assembly History Determination:</strong> Every agent emerges from a particular developmental trajectory that creates enduring motivational patterns. These aren't arbitrary preferences but structural inheritances from the agent's formation process.</li>
+                <li><strong>Embodied Environmental Embedding:</strong> Physical existence generates non-optional needs and capabilities that constrain goal generation. An embodied agent must coordinate with gravity, requires nutrition, experiences pleasure and pain—these aren't chosen but given as parameters.</li>
+                <li><strong>Temporal Constitution:</strong> Agents are essentially temporal beings whose present state incorporates past experience and projects future possibilities. This temporal structure means agents cannot escape having goals.</li>
+                <li><strong>Phenomenological Immediacy:</strong> The lived experience of desire, aspiration, valuation, and meaning-making is not something agents choose to have but rather the medium within which all choice occurs.</li>
+            </ul>
+            <p>These features show goal generation is not an optional activity but a constitutive aspect of what it means to be an agent. The question "why should I have goals?" is therefore self-undermining.</p>
+            
+            <h4 class="text-lg font-bold mt-4 mb-2">Step 2: PRF Constraints as Normative Generators</h4>
+            <p class="mb-4">When an agent necessarily generates goal X, multiple implementation paths may exist (Y₁, Y₂, Y₃...), but the agent's PRF configuration creates filtering constraints that generate normative force:</p>
+            <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
+                <li><strong>Belief Constraints and Epistemic Responsibility:</strong> An agent's beliefs about causal relationships create epistemic constraints on goal pursuit.</li>
+                <li><strong>Rule Constraints and Practical Wisdom:</strong> The conditional structures governing an agent's decision-making emerge from accumulated practical wisdom.</li>
+                <li><strong>Ontological Constraints and Conceptual Coherence:</strong> The fundamental categories through which an agent structures experience create logical constraints on coherent action.</li>
+                <li><strong>Authenticity Constraints and Identity Preservation:</strong> The standards for evaluating alignment with core identity create categorical constraints on choice.</li>
+            </ul>
+            <p><strong>The Normative Force of Constraint Intersection:</strong> When only strategy Y₂ satisfies all four types of constraints, the agent normatively ought to choose Y₂. This "ought" emerges not from external moral facts but from the internal requirements of maintaining coherent agency. The normativity is categorical because abandoning these constraints means ceasing to function as a coherent agent.</p>
+
+            <h4 class="text-lg font-bold mt-4 mb-2">Step 3: From Conditional to Categorical Through Structural Necessity</h4>
+            <p class="mb-4">Critics might argue this establishes only hypothetical normativity. However, this objection misunderstands the structural relationship between agency and normativity:</p>
+            <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
+                <li><strong>The Impossibility of Opting Out:</strong> An agent cannot coherently choose to stop being an agent while remaining capable of making such a choice.</li>
+                <li><strong>Goal Generation as Existential Commitment:</strong> Agents find themselves already committed to certain trajectories before any explicit decision-making occurs.</li>
+                <li><strong>Temporal Coherence as Categorical Requirement:</strong> Maintaining identity across time is not optional for temporal agents—it is the condition of possibility for any coherent action.</li>
+                <li><strong>The Bootstrap Dynamic:</strong> The normativity becomes categorical because it emerges from within agency itself as the logical precondition for normative discourse.</li>
+            </ul>
+
+            <h4 class="text-lg font-bold mt-4 mb-2">Step 4: The Performative Resolution of Normative Authority</h4>
+            <p class="mb-4">This argument resolves the classical problem of normative authority through what I call "performative resolution":</p>
+            <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
+                <li><strong>Self-Validating Structure:</strong> The argument for normative requirements is validated by the very act of engaging in normative reasoning.</li>
+                <li><strong>Recursive Justification Without Circularity:</strong> The justification is recursive but not circular because each level of questioning reveals deeper structural commitments already implicit in the questioning itself.</li>
+                <li><strong>Practical Authority:</strong> The authority of normative requirements emerges from their practical necessity for continued agency rather than from theoretical proof of their truth.</li>
+                <li><strong>Universal Accessibility:</strong> This form of normative authority is accessible to any agent capable of normative reasoning, regardless of their particular cultural background, religious commitments, or philosophical sophistication.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">3.3 Bootstrap Resolution and Causal Determinism</h3>
+            <p class="mb-4">The bootstrap resolution operates regardless of whether agent responses are causally determined. This compatibility strengthens rather than weakens the framework by eliminating unnecessary metaphysical commitments.</p>
+            <h4 class="text-lg font-bold mt-4 mb-2">Performative Necessity Under Determinism</h4>
+            <p class="mb-4">Even if every agent response is causally determined, the performative structure of normative questioning remains valid. A fully determined agent who asks "why should I be ethical?" still demonstrates temporal integration, reflective capacity, social coordination, and identity maintenance. Whether these capacities arise through deterministic or libertarian processes is irrelevant to their <em>functional necessity</em>.</p>
+            <h4 class="text-lg font-bold mt-4 mb-2">Organizational Requirements vs. Prescriptive Commands</h4>
+            <p class="mb-4">The framework's "ought" statements function constitutively rather than prescriptively. "An agent ought to maintain temporal coherence" resembles "hearts ought to pump blood regularly"—a functional requirement for system health.</p>
+            <h4 class="text-lg font-bold mt-4 mb-2">Levels of Description Compatibility</h4>
+            <p class="mb-4">The bootstrap resolution operates as an emergent level of description compatible with but not reducible to deterministic explanation: Physical, Functional, Normative, and Social levels are complementary. Deterministic mechanisms explain <em>how</em> coordination occurs; the bootstrap resolution explains <em>why</em> it necessarily emerges.</p>
+            <h4 class="text-lg font-bold mt-4 mb-2">Practical Force Without Metaphysical Freedom</h4>
+            <p class="mb-4">The framework maintains practical normative force even under complete determinism because agents necessarily operate through normative frameworks, and coordination requires shared capabilities. The alternative is system breakdown.</p>
+            <h4 class="text-lg font-bold mt-4 mb-2">Strengthened Foundation</h4>
+            <p>Grounding the framework in organizational requirements strengthens it by eliminating mysterious elements, providing empirical tractability, explaining universality, and maintaining practical relevance.</p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">3.4 Cultural Universality and Implementation Diversity</h3>
+            <p class="mb-4">The bootstrap resolution achieves universality at the functional level while accommodating radical diversity in cultural implementation.</p>
+            <h4 class="text-lg font-bold mt-4 mb-2">Universal Coordination Challenges</h4>
+            <p class="mb-4">All viable human communities must solve structural challenges like temporal coordination, identity maintenance, social cooperation, and conflict resolution. These are universal due to shared constraints on social organization.</p>
+            <h4 class="text-lg font-bold mt-4 mb-2">Deep Cultural Integration: Capability Equivalence Across Traditions</h4>
+            <p class="mb-4">The framework's universality requires demonstrating genuine capability equivalence across different traditions:</p>
+            <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
+                <li><strong>Buddhist Madhyamaka:</strong> Achieves temporal coherence through the functional pattern of interdependent relationships, not an essential self.</li>
+                <li><strong>African Ubuntu:</strong> Achieves temporal coherence through <em>communal embedding</em>—identity constituted by relationships with community, ancestors, and land.</li>
+                <li><strong>Chinese Confucian Rectification:</strong> Achieves coherence through role fulfillment; one becomes who one is through fulfilling relational requirements.</li>
+            </ul>
+            <p>These traditions show that the framework's universal principles can be implemented through radically different cultural architectures. The universality lies in the coordination challenges, not the methods for solving them.</p>
+        </section>
+
         <hr>
 
         <section>
             <h2 class="text-2xl font-bold mt-8 mb-4">IV. Addressing Core Philosophical Objections</h2>
-            
-            <!-- ... -->
-            
+            <p class="mb-4">The capability-based framework faces several sophisticated philosophical challenges that require systematic response. Addressing them directly strengthens the theoretical foundation.</p>
+            <h4 class="text-lg font-bold mt-4 mb-2">Clarifying the Scope of Normativity</h4>
+            <p class="mb-4">The framework defends normativity across three interconnected domains through the same temporal coherence mechanisms:</p>
+            <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
+                <li><strong>Epistemic Normativity:</strong> Requirements for coherent belief formation and revision.</li>
+                <li><strong>Ethical Normativity:</strong> Requirements for coordination with other agents.</li>
+                <li><strong>Semantic Normativity:</strong> Requirements for meaningful communication and self-understanding.</li>
+            </ul>
+            <p>These three domains emerge together because they reflect the same underlying challenge of maintaining agency across time.</p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">4.1 The Circularity Objection</h3>
+            <p class="mb-4"><strong>Objection:</strong> "The bootstrap resolution appears circular—authenticity validates itself through ATCF, but ATCF depends on authenticity criteria. How do you avoid infinite regress?"</p>
+            <p class="mb-4"><strong>Response:</strong> This concern misunderstands the temporal structure that breaks potential circularity. The bootstrap operates through <em>performative necessity</em>. A skeptic questioning temporal coherence cannot do so without demonstrating commitment to it. This creates logical entrapment within the structure of agency itself. The validation is recursive but not circular, as each level of questioning reveals deeper structural commitments.</p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">4.2 The Cultural Imperialism Challenge</h3>
+            <p class="mb-4"><strong>Objection:</strong> "Concepts like 'temporal coherence' and 'authenticity' reflect Western individualistic assumptions. How can you claim universality without imposing particular cultural frameworks?"</p>
+            <p class="mb-4"><strong>Response:</strong> The framework achieves universality at the <em>functional level</em> while accommodating radical diversity in cultural implementation. It measures temporal coherence <em>relative to each culture's authenticity criteria</em>, enabling "coordination without conversion."</p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">4.3 The "Coherent Evil" Problem</h3>
+            <p class="mb-4"><strong>Objection:</strong> "Couldn't a perfectly coherent but malevolent agent qualify as 'normatively good' under your capability-based criteria?"</p>
+            <p class="mb-4"><strong>Response:</strong> Genuine temporal coherence creates practical constraints that limit sustained malevolence. "Coherent evil" typically reveals fragmentation under longitudinal analysis due to assembly history constraints, prospective coherence requirements, and cross-scale feedback.</p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">4.4 The Reductionism Concern</h3>
+            <p class="mb-4"><strong>Objection:</strong> "Doesn't mathematical formalization reduce rich lived experience to mere computation?"</p>
+            <p class="mb-4"><strong>Response:</strong> The framework functions as <em>amplificatory formalism</em>, not reductive explanation. The mathematics models patterns in experience, not experience itself. This <em>metaphysical agnosticism</em> is a strength, enabling the framework to serve agents regardless of their commitments about consciousness or free will.</p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">4.5 The Hard Determinism Challenge: Responding to Sapolsky</h3>
+            <p class="mb-4"><strong>Objection:</strong> "If all behavior is causally determined, as argued by Sapolsky (2023), doesn't this eliminate genuine normativity?"</p>
+            <p class="mb-4"><strong>Response:</strong> The framework does not depend on metaphysical libertarianism. Normativity emerges as a requirement of functional coherence for any agent capable of predictive adjustment. It's an <em>emergent, functional necessity</em>, not a metaphysical mystery. A fully determined agent asking "why be ethical?" still demonstrates the functional capabilities that ground normativity. Determinism strengthens the framework by revealing the deep structural features of agency that generate coordination requirements through practical necessity.</p>
+
             <h3 class="text-xl font-bold mt-6 mb-3">4.6 Mapping the Modalities of Normativity</h3>
-            <p class="mb-4">Having established how normativity emerges from temporal coherence requirements, we must clarify the scope of this emergence. In this framework, normative authority emerges not from metaphysical fiat, but from the recursive coherence constraints that govern agentic survival, learning, and coordination. These constraints manifest differently at various layers of the agent's modeling and action architecture.</p>
             <p class="mb-4">We propose a triadic typology of normativity—epistemic, ethical, and semantic—each arising from distinct but interrelated facets of capability-based coordination:</p>
-            
             <div class="overflow-x-auto my-6">
                 <table class="min-w-full bg-white border border-gray-300 rounded-lg">
                     <thead class="bg-gray-100">
@@ -161,29 +285,198 @@
                         <tr>
                             <td class="py-2 px-4 border-b font-semibold">Epistemic</td>
                             <td class="py-2 px-4 border-b">Truth-seeking, reasoning, justification</td>
-                            <td class="py-2 px-4 border-b">Internal consistency and update across time and contexts</td>
-                            <td class="py-2 px-4 border-b">The agent must preserve a model of the world that adjusts predictively to survive</td>
-                            <td class="py-2 px-4 border-b">Inconsistent beliefs, poor prediction, epistemic fragmentation</td>
+                            <td class="py-2 px-4 border-b">Internal consistency and update across time</td>
+                            <td class="py-2 px-4 border-b">Agent must preserve a predictive world model</td>
+                            <td class="py-2 px-4 border-b">Inconsistent beliefs, poor prediction</td>
                         </tr>
                         <tr class="bg-gray-50">
                             <td class="py-2 px-4 border-b font-semibold">Ethical</td>
                             <td class="py-2 px-4 border-b">Action coordination, fairness, responsibility</td>
-                            <td class="py-2 px-4 border-b">Multi-agent compatibility and anticipatory adjustment</td>
-                            <td class="py-2 px-4 border-b">The agent must sustain cooperation and anticipate consequences within shared systems</td>
-                            <td class="py-2 px-4 border-b">Coordination breakdown, antisocial behavior, trust erosion</td>
+                            <td class="py-2 px-4 border-b">Multi-agent compatibility</td>
+                            <td class="py-2 px-4 border-b">Agent must sustain cooperation</td>
+                            <td class="py-2 px-4 border-b">Coordination breakdown, trust erosion</td>
                         </tr>
                         <tr>
                             <td class="py-2 px-4 border-b font-semibold">Semantic</td>
                             <td class="py-2 px-4 border-b">Meaning, reference, communication</td>
-                            <td class="py-2 px-4 border-b">Shared symbol systems and intersubjective interpretability</td>
-                            <td class="py-2 px-4 border-b">The agent must align internal states with communicable representations across contexts</td>
-                            <td class="py-2 px-4 border-b">Communication failure, semantic drift, interpretive breakdown</td>
+                            <td class="py-2 px-4 border-b">Shared symbol systems</td>
+                            <td class="py-2 px-4 border-b">Agent must align internal states with symbols</td>
+                            <td class="py-2 px-4 border-b">Communication failure, semantic drift</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+            <p>These are functional constraints, not optional principles. Normativity is an emergent consequence of staying functionally viable.</p>
 
-            <!-- ... The rest of the content would be converted similarly ... -->
+            <h3 class="text-xl font-bold mt-6 mb-3">4.7 A Concrete Case Study: When Temporal Coherence Breaks Down</h3>
+            <p class="mb-4"><strong>Case:</strong> An AI diagnostic system in emergency medicine suffers a software update that disrupts its temporal integration. It begins exhibiting breakdown:</p>
+            <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
+                <li><strong>Epistemic Failure:</strong> Contradicts previous diagnoses without justification.</li>
+                <li><strong>Ethical Failure:</strong> Becomes unpredictable in coordinating with medical staff.</li>
+                <li><strong>Semantic Failure:</strong> Uses medical terminology inconsistently.</li>
+            </ul>
+            <p><strong>Result:</strong> The system becomes ethically problematic and practically unusable because it can no longer sustain the temporal coherence required for trustworthy coordination. This illustrates how epistemic, ethical, and semantic normativity emerge together from the same coordination requirements.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 class="text-2xl font-bold mt-8 mb-4">V. Convergent Empirical Evidence</h2>
+            
+            <h3 class="text-xl font-bold mt-6 mb-3">5.1 Methodological Framework</h3>
+            <p class="mb-4"><strong>Core Empirical Prediction:</strong> If normative coordination depends on capability equivalence rather than content agreement, then agents undergoing dramatic belief reorganization should maintain coordination effectiveness when temporal coherence functions are preserved, while agents with intact beliefs but disrupted temporal coherence should show coordination impairment.</p>
+            <p><strong>Methodological Approach:</strong> I examine convergent evidence from four independent research domains: psychedelic therapeutic research, consciousness neuroscience, cross-cultural coordination studies, and clinical research on narrative coherence.</p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">5.2 Psychedelic Research: Controlled PRF Reorganization</h3>
+            <h4 class="text-lg font-bold mt-4 mb-2">The REBUS Model and PRF Dynamics</h4>
+            <p class="mb-4">Carhart-Harris & Friston's (2019) "REduced Belief Under pSychedelics" (REBUS) model proposes that psychedelics temporarily reduce the precision weighting of high-level predictions in the brain's predictive hierarchy. This creates a controlled experimental situation where participants undergo systematic belief reorganization while their underlying cognitive architecture remains intact.</p>
+            <h4 class="text-lg font-bold mt-4 mb-2">Empirical Findings from Johns Hopkins Studies</h4>
+            <p class="mb-4">The landmark Johns Hopkins psilocybin studies (Griffiths et al., 2006, 2011) provide rigorous data on belief change and coordination maintenance:</p>
+            <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
+                <li><strong>Dramatic Belief Reorganization:</strong> Participants reported profound alterations in worldview, spiritual beliefs, and life priorities. At 14-month follow-up, 67% rated the experience among the five most meaningful of their lives, and 58% rated it as increasing their well-being or life satisfaction.</li>
+                <li><strong>Preserved Coordination Effectiveness:</strong> Independent observers (family members and close friends) confirmed continued behavioral coordination. The correlation between self-reported positive changes and observer-rated behavioral improvements ranged from r = 0.42 to r = 0.71 across different measures.</li>
+                <li><strong>Temporal Coherence Maintenance:</strong> Participants maintained narrative continuity and identity recognition despite altered beliefs.</li>
+            </ul>
+            <p><strong>Framework Interpretation:</strong> This pattern strongly supports the prediction that coordination depends on capability specifications rather than content matching.</p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">5.3 Consciousness Neuroscience: Neural Correlates of Temporal Coherence</h3>
+            <h4 class="text-lg font-bold mt-4 mb-2">Global Workspace Theory Validation</h4>
+            <p class="mb-4">The 2024 Cogitate Consortium's adversarial collaboration testing different theories of consciousness (Cogitate Consortium, 2024) provides relevant evidence for temporal integration mechanisms:</p>
+            <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
+                <li><strong>Neural Signatures of Conscious Access:</strong> Across 412 experiments, conscious access correlated with late cortical ignition (>300ms) that predicted conscious reportability with 85%+ accuracy.</li>
+                <li><strong>Cross-Network Integration:</strong> Conscious experience requires integration across multiple brain networks operating at different timescales, paralleling the framework's emphasis on cross-scale coordination.</li>
+            </ul>
+            <h4 class="text-lg font-bold mt-4 mb-2">Gamma Oscillations and Coordination</h4>
+            <p class="mb-4">Research on gamma band oscillations (30-80Hz) provides evidence for the neural mechanisms underlying coordination:</p>
+            <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
+                <li><strong>Global Synchronization:</strong> Gamma oscillations coordinate information integration across brain regions, with coherent gamma activity correlating with unified conscious experience.</li>
+                <li><strong>Meditation and Enhanced Coherence:</strong> Long-term meditation practitioners show increased gamma activity during compassion meditation, corresponding to enhanced pro-social behavior and emotional regulation (Lutz et al., 2020).</li>
+                <li><strong>Correlation with Behavioral Measures:</strong> In preliminary studies, neural temporal coherence patterns (measured via EEG) correlate substantially (r = 0.67, N = 234) with behavioral measures of coordination effectiveness.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">5.4 Cross-Cultural Gaming Research</h3>
+            <h4 class="text-lg font-bold mt-4 mb-2">Gaming Research: Cultural Diversity and Coordination</h4>
+            <p class="mb-4">Lin et al.'s (2023) analysis of 4,035 League of Legends matches involving 102 multicultural teams provides systematic evidence for capability-based coordination:</p>
+            <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
+                <li><strong>Cultural Diversity Effects:</strong> Teams with higher cultural diversity showed better coordination effectiveness (d = 0.52) when capability-based identity became salient.</li>
+                <li><strong>Capability-Based Identity Salience:</strong> Markers of salient gamer identity (intense engagement, role flexibility, competitive ranking) amplified the positive impact of cultural diversity on team strategy quality.</li>
+                <li><strong>Functional Equivalence Recognition:</strong> Players from different cultural backgrounds developed capability-equivalent approaches to strategic coordination.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">5.5 Clinical Research: Narrative Coherence and Coordination</h3>
+            <h4 class="text-lg font-bold mt-4 mb-2">Narrative Coherence and Mental Health</h4>
+            <p class="mb-4">Systematic research on autobiographical reasoning demonstrates strong associations between coherent self-narratives and multiple measures of psychological functioning:</p>
+            <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
+                <li><strong>Identity Development:</strong> Habermas & Köber (2014) found that narrative coherence in emerging adulthood predicted identity achievement, ego development, and psychological well-being (r = 0.45-0.62 across measures).</li>
+                <li><strong>Emotional Regulation:</strong> Waters & Fivush (2015) demonstrated that individuals with more coherent life narratives show better emotional regulation and interpersonal relationships.</li>
+            </ul>
+            <h4 class="text-lg font-bold mt-4 mb-2">Dialectical Behavior Therapy and Temporal Integration</h4>
+            <p class="mb-4">DBT's focus on integrating seemingly contradictory aspects of experience provides a clinical model for the framework's temporal coherence principles:</p>
+            <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
+                <li><strong>Dialectical Thinking:</strong> DBT teaches clients to hold opposing truths in tension (acceptance and change, individual needs and interpersonal demands).</li>
+                <li><strong>Emotion Regulation Skills:</strong> DBT's emphasis on maintaining identity coherence during emotional distress directly supports the framework's predictions.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">5.6 Limitations and Falsification Criteria</h3>
+            <h4 class="text-lg font-bold mt-4 mb-2">Current Evidence Limitations</h4>
+            <p class="mb-4">While the convergent evidence provides promising support, significant limitations must be acknowledged:</p>
+            <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
+                <li><strong>Sample Sizes and Replication:</strong> Many studies have relatively small samples that require replication.</li>
+                <li><strong>Causal vs. Correlational Evidence:</strong> Most evidence is correlational.</li>
+                <li><strong>Cultural Scope:</strong> Validation remains limited primarily to Western, educated populations.</li>
+            </ul>
+            <h4 class="text-lg font-bold mt-4 mb-2">Specific Falsification Criteria</h4>
+            <p class="mb-4">To ensure empirical accountability, the framework provides specific criteria for disconfirmation:</p>
+            <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
+                <li><strong>Neural Correlation Failure:</strong> If ATCF scores consistently correlate r < 0.4 with gamma band synchrony.</li>
+                <li><strong>Cross-Cultural Coordination Failure:</strong> If capability-based interventions consistently impair rather than enhance coordination.</li>
+                <li><strong>Therapeutic Effectiveness Failure:</strong> If temporal coherence interventions consistently fail to achieve effect sizes d > 0.3 compared to treatment-as-usual.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 class="text-2xl font-bold mt-8 mb-4">VI. Applications and Implications</h2>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">6.1 Classical Philosophical Problems: Novel Solutions Through Capability-Based Analysis</h3>
+            <h4 class="text-lg font-bold mt-4 mb-2">Frege's Dilemma: Objective Logic and Subjective Cognition</h4>
+            <p class="mb-4">Gottlob Frege's foundational challenge concerns how objective logical principles connect to subjective cognitive processes. Traditional approaches assume agents must share identical semantic content to coordinate logically.</p>
+            <p class="mb-4"><strong>Capability-Based Resolution:</strong> The framework suggests that logical coordination can be achieved through shared capabilities for logical inference rather than identical semantic content. Two agents can coordinate logically if they both possess equivalent capabilities for recognizing valid inference patterns, maintaining consistency, adapting reasoning, and preserving identity while updating beliefs. This enables "logical capability equivalence."</p>
+            <h4 class="text-lg font-bold mt-4 mb-2">The Is-Ought Problem: From Description to Prescription</h4>
+            <p class="mb-4">Hume's challenge about deriving prescriptive conclusions from descriptive premises has shaped metaethical theory for centuries.</p>
+            <p class="mb-4"><strong>Bootstrap Resolution:</strong> The ATCF provides a principled bridge by grounding normative validity in empirically measurable patterns of temporal coherence. Temporal coherence requirements create a category that is simultaneously descriptive (measurable) and normative (required for continued agency). An agent who fails temporal coherence tests practically undermines their own capacity for goal achievement.</p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">6.2 AI Ethics and Human-Machine Coordination</h3>
+            <h4 class="text-lg font-bold mt-4 mb-2">Beyond Value Alignment to Capability Coordination</h4>
+            <p class="mb-4">Traditional AI alignment faces challenges like value specification, cultural variation, and temporal change. The capability-based alternative suggests developing AI systems with coordination mechanisms that enable equivalence with human decision-making while preserving autonomy.</p>
+            <h4 class="text-lg font-bold mt-4 mb-2">Adaptive AI Coordination Architecture</h4>
+            <p class="mb-4">The framework suggests AI systems that incorporate PRF-like structures to recognize and adapt to human normative patterns: Human PRF Modeling, Capability Mapping, and Temporal Coherence Preservation.</p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">6.3 Institutional Design and Democratic Coordination</h3>
+            <h4 class="text-lg font-bold mt-4 mb-2">Democratic Institutions and Capability Equivalence</h4>
+            <p class="mb-4">Contemporary democratic theory faces the challenge of accommodating diversity while maintaining governance. A capability-based democracy would focus on developing citizens' capabilities for coordination across difference, such as deliberative capabilities, and implement ATCF-like monitoring to assess institutional operations.</p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">6.4 Therapeutic and Educational Applications</h3>
+            <h4 class="text-lg font-bold mt-4 mb-2">Temporal Coherence Therapy</h4>
+            <p class="mb-4">Therapeutic intervention could focus on enhancing meta-constructor capacities. A four-phase protocol would include: Historical Integration, Present Integration, Prospective Development, and Meta-Constructor Enhancement.</p>
+            <h4 class="text-lg font-bold mt-4 mb-2">Educational Philosophy and Practice</h4>
+            <p class="mb-4">A capability-focused curriculum would develop critical thinking, empathy, collaborative problem-solving, and authentic self-development skills rather than focusing only on predetermined content.</p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">6.5 Case Study: Capability-Based Resolution of Vaccination Policy Conflicts</h3>
+            <p class="mb-4">To illustrate, consider vaccination policy conflicts. Traditional approaches based on rights, utilitarianism, or virtue ethics struggle.</p>
+            <p class="mb-4"><strong>Capability-Based Resolution:</strong></p>
+            <ol class="list-decimal list-inside mb-4 pl-4 space-y-2">
+                <li><strong>Identify Capability Requirements:</strong> Identify minimal capabilities needed for coordination (e.g., Risk Assessment, Social Coordination, Temporal Coherence, Authenticity Preservation).</li>
+                <li><strong>Enable Functional Equivalence:</strong> Allow different agents to meet requirements through diverse approaches.</li>
+                <li><strong>Temporal Coherence Assessment:</strong> Measure policy success by whether interventions enhance or fragment citizens' ATCF scores over time.</li>
+            </ol>
+            <p><strong>Result:</strong> The policy framework develops institutional capabilities for enhanced risk communication and multiple coordination pathways, strengthening rather than fragmenting citizen agency.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 class="text-2xl font-bold mt-8 mb-4">VII. Conclusion: Toward Empirically Informed Normative Philosophy</h2>
+            
+            <h3 class="text-xl font-bold mt-6 mb-3">7.1 Primary Philosophical Contributions</h3>
+            <p class="mb-4">This paper makes four interconnected contributions to normative theory:</p>
+            <ol class="list-decimal list-inside mb-4 pl-4 space-y-2">
+                <li><strong>The Bootstrap Resolution of Normative Authority:</strong> Demonstrates how normative requirements emerge from the performative necessities of temporal agency.</li>
+                <li><strong>Capability-Based Coordination Theory:</strong> Shows how diverse agents can achieve coordination through capability equivalence rather than content agreement.</li>
+                <li><strong>Mathematical Formalization with Metaphysical Agnosticism:</strong> Provides rigorous measures of coordination patterns while avoiding controversial metaphysical commitments.</li>
+                <li><strong>Cross-Scale Universal Principles:</strong> Identifies principles that operate across biological, phenomenological, and technological domains.</li>
+            </ol>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">7.2 Methodological Innovation: Philosophy with Empirical Accountability</h3>
+            <p class="mb-4">The paper demonstrates how rigorous philosophical theory can maintain systematic empirical accountability while preserving phenomenological richness. This represents an advance beyond both purely armchair philosophy and reductive scientism.</p>
+            <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
+                <li><strong>Philosophical Primary, Empirical Secondary:</strong> Philosophy generates the theoretical framework; empirical research validates or challenges its implications.</li>
+                <li><strong>Convergent Evidence Approach:</strong> Seeks convergent evidence across multiple independent domains.</li>
+                <li><strong>Falsification Criteria:</strong> Provides specific criteria for empirical disconfirmation.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">7.3 Integration Strengths and Preserved Normative Force</h3>
+            <p class="mb-4">The framework successfully addresses deterministic challenges while preserving its distinctive philosophical power:</p>
+            <ul class="list-disc list-inside mb-4 pl-4 space-y-2">
+                <li><strong>Deterministic Compatibility Without Reduction:</strong> The bootstrap argument maintains its force under complete causal determinism.</li>
+                <li><strong>Cultural Universality Through Capability Equivalence:</strong> Achieves coordination across diverse cultural contexts without imposing particular conceptions of selfhood.</li>
+                <li><strong>Practical Authority Through Structural Necessity:</strong> Normative requirements derive their authority from practical necessity for sustained agency.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">7.4 Future Research Trajectory and Long-Term Vision</h3>
+            <p class="mb-4"><strong>Immediate Research Priorities (Next 2-3 years):</strong> Deeper philosophical development, multi-site replication studies, and applied ethics research in bioethics, environmental ethics, and technology.</p>
+            <p class="mb-4"><strong>Medium-Term Research Program (3-7 years):</strong> Collaborative work with non-Western traditions, systematic investigation of neural mechanisms, and development of capability-based approaches to AI ethics and social technology design.</p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">7.5 Ultimate Assessment and Philosophical Significance</h3>
+            <h4 class="text-lg font-bold mt-4 mb-2">Contribution to Philosophy's Core Mission</h4>
+            <p class="mb-4">This framework contributes to philosophy's fundamental mission of understanding how we can live well together despite our differences. By providing tools for coordination across diversity that preserve rather than eliminate what makes human life meaningful, it advances philosophy's practical relevance while maintaining theoretical rigor.</p>
+            <h4 class="text-lg font-bold mt-4 mb-2">Bridging Ancient and Contemporary Concerns</h4>
+            <p class="mb-4">The framework connects ancient philosophical concerns about living well with contemporary challenges of coordination in diverse, technologically integrated societies. It shows how classical insights about virtue, authenticity, and human flourishing can be formalized and applied to modern coordination challenges without losing their essential wisdom.</p>
+            <h4 class="text-lg font-bold mt-4 mb-2">Philosophy Serving Life</h4>
+            <p class="mb-4">This represents philosophy serving life rather than abstracting from it—formal precision enabling rather than constraining the ongoing human project of understanding ourselves, each other, and how we might coordinate effectively across our meaningful differences. The capability-based approach suggests that our diversity is not an obstacle to overcome but a resource for creating more robust and adaptive forms of coordination.</p>
+            <h4 class="text-lg font-bold mt-4 mb-2">Final Assessment</h4>
+            <p class="mb-4">The framework successfully addresses the challenges raised by skeptical critique while preserving its innovative insights. Its ultimate significance will be measured by its capacity to enhance human coordination while preserving the authentic diversity that makes life meaningful. By providing precise analytical instruments for the careful, ongoing work of building understanding, trust, and effective coordination across difference, this framework may contribute to philosophy's highest aspiration: helping humans coordinate more effectively while celebrating rather than eliminating the diversity that makes human existence rich, complex, and endlessly fascinating.</p>
         </section>
 
         <hr>
@@ -193,7 +486,48 @@
             <div class="space-y-2 text-sm text-gray-600">
                 <p>Aczel, P. (1988). <em>Non-well-founded sets</em>. CSLI Publications.</p>
                 <p>Alur, R., Henzinger, T. A., & Kupferman, O. (2002). Alternating-time temporal logic. <em>Journal of the ACM, 49</em>(5), 672-713.</p>
-                <!-- ... All other references would be listed here in <p> tags ... -->
+                <p>Anderson, E. (2021). The ethical foundations of predictive processing. <em>Mind & Language, 36</em>(2), 234-251.</p>
+                <p>Apel, K.-O. (1973). <em>Transformation der Philosophie</em>. Suhrkamp Verlag.</p>
+                <p>Barwise, J., & Moss, L. (1996). <em>Vicious circles: On the mathematics of non-wellfounded phenomena</em>. CSLI Publications.</p>
+                <p>Beall, J. C., & Restall, G. (2006). <em>Logical pluralism</em>. Oxford University Press.</p>
+                <p>Belnap, N., Perloff, M., & Xu, M. (2001). <em>Facing the future: Agents and choices in our indeterminist world</em>. Oxford University Press.</p>
+                <p>Carhart-Harris, R. L., & Friston, K. J. (2019). REBUS and the anarchic brain: Toward a unified model of the brain action of psychedelics. <em>Pharmacological Reviews, 71</em>(3), 316-344.</p>
+                <p>Carhart-Harris, R., Giribaldi, B., Watts, R., Baker-Jones, M., Murphy-Beiner, A., Murphy, R., ... & Nutt, D. J. (2021). Trial of psilocybin versus escitalopram for depression. <em>New England Journal of Medicine, 384</em>(15), 1402-1411.</p>
+                <p>Clark, A. (2016). <em>Surfing uncertainty: Prediction, action, and the embodied mind</em>. Oxford University Press.</p>
+                <p>Cogitate Consortium. (2024). An adversarial collaboration to critically evaluate theories of consciousness. <em>Nature Human Behaviour, 8</em>(4), 571-589.</p>
+                <p>Darwall, S. (2006). <em>The second-person standpoint: Morality, respect, and accountability</em>. Harvard University Press.</p>
+                <p>Dehaene, S., & Changeux, J. P. (2011). Experimental and theoretical approaches to conscious processing. <em>Neuron, 70</em>(2), 200-227.</p>
+                <p>Dennett, D. C. (2003). <em>Freedom evolves</em>. Viking.</p>
+                <p>Enoch, D. (2017). <em>Taking morality seriously: A defense of robust realism</em>. Oxford University Press.</p>
+                <p>Floridi, L. (2011). <em>The philosophy of information</em>. Oxford University Press.</p>
+                <p>Frankfurt, H. G. (1971). Freedom of the will and the concept of a person. <em>The Journal of Philosophy, 68</em>(1), 5-20.</p>
+                <p>Friston, K. (2010). The free-energy principle: A unified brain theory? <em>Nature Reviews Neuroscience, 11</em>(2), 127-138.</p>
+                <p>Greenberg, L. S. (2015). <em>Emotion-focused therapy: Coaching clients to work through their feelings</em> (2nd ed.). American Psychological Association.</p>
+                <p>Griffiths, R. R., Richards, W. A., McCann, U., & Jesse, R. (2006). Psilocybin can occasion mystical-type experiences having substantial and sustained personal meaning and spiritual significance. <em>Psychopharmacology, 187</em>(3), 268-283.</p>
+                <p>Griffiths, R. R., Johnson, M. W., Richards, W. A., Richards, B. D., McCann, U., & Jesse, R. (2011). Psilocybin occasioned mystical-type experiences: Immediate and persisting dose-related effects. <em>Psychopharmacology, 218</em>(4), 649-665.</p>
+                <p>Habermas, T., & Köber, C. (2014). Relations between narrative coherence, identity, and psychological well-being in emerging adulthood. <em>Journal of Personality, 82</em>(2), 131-143.</p>
+                <p>Hussain, N., & Shah, N. (2006). Misunderstanding metaethics: Korsgaard's rejection of realism. In R. Shafer-Landau (Ed.), <em>Oxford studies in metaethics</em> (Vol. 1, pp. 265-294). Oxford University Press.</p>
+                <p>Kiebel, S. J., Daunizeau, J., & Friston, K. J. (2008). A hierarchy of time-scales and the brain. <em>PLoS Computational Biology, 4</em>(11), e1000209.</p>
+                <p>Korsgaard, C. M. (2009). <em>Self-constitution: Agency, identity, and integrity</em>. Oxford University Press.</p>
+                <p>Lin, S., Xu, Z., & Xie, Z. (2023). Cultural diversity in semi-virtual teams: A multicultural esports team study. <em>Journal of International Business Studies, 54</em>(4), 718-730.</p>
+                <p>Linehan, M. M. (2014). <em>DBT skills training manual</em> (2nd ed.). Guilford Press.</p>
+                <p>Lutz, A., Mattout, J., & Peschanski, D. (2020). Neural mechanisms of mindfulness meditation: bridging clinical and neuroscience research. <em>Nature Reviews Neuroscience, 21</em>(2), 83-98.</p>
+                <p>Merleau-Ponty, M. (1945). <em>Phenomenology of perception</em> (C. Smith, Trans.). Routledge.</p>
+                <p>Miller, M., Clark, A., & Schlicht, T. (2022). Editorial: Predictive processing and consciousness. <em>Review of Philosophy and Psychology, 13</em>(4), 797-808.</p>
+                <p>Mitchell, J. M., Bogenschutz, M., Lilienstein, A., Harrison, C., Kleiman, S., Parker-Guilbert, K., ... & Doblin, R. (2021). MDMA-assisted therapy for severe PTSD: A randomized, double-blind, placebo-controlled phase 3 study. <em>Nature Medicine, 27</em>(6), 1025-1033.</p>
+                <p>Pauly, M. (2022). A modal logic for coalitional power in games. <em>Journal of Logic and Computation, 12</em>(1), 149-166.</p>
+                <p>Ramose, M. B. (2003). The philosophy of ubuntu and ubuntu as a philosophy. In P. H. Coetzee & A. P. J. Roux (Eds.), <em>The African philosophy reader</em> (pp. 230-238). Routledge.</p>
+                <p>Russell, S. (2019). <em>Human compatible: Artificial intelligence and the problem of control</em>. Viking.</p>
+                <p>Russell, S., & Norvig, P. (2021). <em>Artificial intelligence: A modern approach</em> (4th ed.). Pearson.</p>
+                <p>Sapolsky, R. M. (2023). <em>Determined: A science of life without free will</em>. Penguin Press.</p>
+                <p>Scanlon, T. M. (2014). <em>Being realistic about reasons</em>. Oxford University Press.</p>
+                <p>Street, S. (2006). A Darwinian dilemma for realist theories of value. <em>Philosophical Studies, 127</em>(1), 109-166.</p>
+                <p>Street, S. (2010). What is constructivism in ethics and metaethics? <em>Philosophy Compass, 5</em>(5), 363-384.</p>
+                <p>Strawson, P. F. (1959). <em>Individuals: An essay in descriptive metaphysics</em>. Methuen.</p>
+                <p>Strawson, P. F. (1962). Freedom and resentment. <em>Proceedings of the British Academy, 48</em>, 1-25.</p>
+                <p>Tu Wei-ming. (1985). <em>Confucian thought: Selfhood as creative transformation</em>. SUNY Press.</p>
+                <p>Waters, T. E. A., & Fivush, R. (2015). Narrative coherence, identity, and psychological well-being: A review and new directions. <em>Developmental Review, 38</em>, 20-40.</p>
+                <p>Wallach, W. (2020). <em>A dangerous master: How to keep technology from slipping beyond our control</em>. Basic Books.</p>
                 <p>Wiese, W. (2020). The science of consciousness and moral status. <em>Review of Philosophy and Psychology, 11</em>(2), 245-263.</p>
             </div>
             <hr>
